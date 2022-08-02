@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satış Sözleşmesi</title>
+    <style>
+        #söz{
+           resize: none;
+           width: 400px;
+           height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Sözleşme Onay</legend>
+            <input type="checkbox" name="sözleşme-onay" id="onay" required>
+            <label for="onay">Aşağıdaki bilgilerin doğru olduğunu kabul ediyorum</label><br>
+            <button type="submit">Formu Kaydet</button>
+            <button type="reset">Formu Sil</button>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="Güvenlik">Form Güvenlik ID</label></td>
+                        <td><input type="text" name="isim" id="Güvenlik" placeholder="12345"></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="fname">Ad</label></td>
+                        <td><input type="text" name="isim" id="fname"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Lname">Soyad</label></td>
+                        <td><input type="text" name="isim" id="Lname"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="yas">Yaş</label></td>
+                        <td><input type="text" name="isim" id="yas"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">Mail Adresi</label></td>
+                        <td><input type="text" name="isim" id="mail"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="foto">Fotoğraf Ekle</label></td>
+                        <td><input type="file" name="Eklenen-Fotoğram" id="foto"></td>
+                    </tr>                    
+                </tbody>
+            </table>          
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Diğer Bilgiler</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="2"><h2>Mesleki Deneyim ve Tecrübe</h2></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tarih">Sektöre Giriş Tarihi:</label></td>
+                        <td><input type="date" name="Giriş_Tarihi" id="tarih"></td>
+                    </tr>
+                    <tr>                        
+                        <td><label for="deneyim">Sektörede Deneyim Süresi:</label></td>
+                        <td><input type="radio" name="Deneyim_süresi" id="deneyim">1-5 yıl <br>
+                        <input type="radio" name="Deneyim_süresi" id="deneyim">6-10 yıl <br>
+                        <input type="radio" name="Deneyim_süresi" id="deneyim">11-15 yıl <br>
+                        <input type="radio" name="Deneyim_süresi" id="deneyim">15 yıl üstü</td>                        
+                    </tr>
+                    <tr>
+                        <td><label for="programlam">Proramlama Dilleri</label></td>
+                        <td><input type="checkbox" name="" id="programlama">C# <br>
+                        <input type="checkbox" name="" id="programlama">PHP <br>
+                        <input type="checkbox" name="" id="programlama">Java <br>
+                        <input type="checkbox" name="" id="programlama">Javascript</td>
+                    </tr>                
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Sözleşme Kopyası</legend>
+            <textarea name="sözleşme" id="söz"  cols="30" rows="10" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sunt eligendi odit sed ipsum vel accusamus quasi molestias, aliquid optio dolorem esse quia ratione facilis deleniti earum reiciendis excepturi itaque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum hic mollitia nobis repellat nemo pariatur obcaecati cupiditate nihil? Similique dignissimos quos id repellat qui eos quibusdam iste distinctio vero harum.</textarea>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Mail Listesi</legend>
+            <label for="mail">Mail Listesine Katılmak <b>İstitorum</b></label>
+            <input type="radio" name="mail-istiyo" id="mail" > <br>
+            <label for="mail">Mail Listesine Katılmak <b>İstemiyorum</b></label>
+            <input type="radio" name="mail-istiyo" id="mail">
+        </fieldset>
+    </div>
+    
+</body>
+</html>
